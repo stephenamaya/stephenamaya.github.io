@@ -1,0 +1,73 @@
+/**************************
+TABLE OF CONTENTS
+1.0 Containers
+2.0 Rows
+3.0 Columns
+4.0 Responsive
+***************************/
+
+/****** 1.0 Containers *******/
+
+.container { max-width: 1200px; margin-top: 5vh; } 
+.container h3 { text-align: center; } 
+.width-container { max-width: 2000px; margin: auto; animation-name: example3; animation-duration: 1.5s; } 
+
+@keyframes example3 { 
+ 0% { opacity:0 } 
+ 100% { opacity:1 } 
+ }
+
+.mobilecontainer { display: none; } 
+
+/********* 2.0 Rows **********/
+
+.row { position: relative; width: 100%; } 
+.row [class^="col"] { float: left; min-height: 0.125rem; box-sizing: border-box; } 
+.row::after { content: ""; display: table; clear: both; } 
+
+.toprow { border-bottom: 2px solid rgb(66, 27, 12); } 
+
+.bottomrow p { padding: 5px 15px; } 
+
+/******** 3.0 Columns ********/
+
+.col { padding: 10px; } 
+.c1 { width: 6.33%; } 
+.c2 { width: 14.66%; } 
+.c3 { width: 23%; } 
+.c4 { width: 31.33%; } 
+.c5 { width: 39.66%; } 
+.c6 { width: 48%; } 
+.c7 { width: 56.33%; } 
+.c8 { width: 64.66%; } 
+.c9 { width: 73%; } 
+.c10 { width: 81.33%; } 
+.c11 { width: 89.66%; } 
+.c12 { width: 98%; } 
+
+.one, .two, .three { border-right:2px solid rgb(66, 27, 12); } 
+
+/****** 4.0 Responsive *******/
+
+@media only screen and (max-width: 1375px) {
+ .container { width: 1000px; } 
+ .width-container { width: 100%; } 
+ .responsive-fade-in { animation-name: example4; animation-duration: 4s; } 
+ @keyframes example4 { 
+ 0% { opacity:0 } 
+ 70% { opacity:0 } 
+ 100% { opacity:1 } 
+ } 
+ }
+
+@media only screen and (max-width: 1100px) {
+ .container { width: 100%; } 
+ .bottomrow p { font-size: 1.1rem; padding: 6px 8px; } 
+}
+
+@media only screen and (max-width: 700px){
+ .mobilecontainer { display: block; } 
+ .container { display: none; } 
+ .c3 { width: 46%; } 
+ .bottomrow p { font-size: 1.1rem; padding: 2px 2px; } 
+}

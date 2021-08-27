@@ -1,0 +1,273 @@
+/**************************
+TABLE OF CONTENTS
+1.0 Global / Formatting
+2.0 Navigation Footer
+3.0 Fonts
+4.0 Animation
+5.0 Images
+6.0 Scroll Bar
+7.0 Link Animation
+8.0 Responsive
+***************************/
+
+/**** 1.0 global / Formatting ****/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+em,
+img,
+strong,
+ol,
+ul,
+li,
+table,
+caption,
+footer,
+nav,
+span { margin: 0; padding: 0; top: 0; font-size: 100%; scroll-behavior: smooth; list-style: none; color: rgb(48, 38, 38); text-decoration: none; } 
+
+body { font-family: Arial, Helvetica, sans-serif; background-color: rgb(248, 246, 242); text-align: left; cursor: default; overflow-x: hidden; cursor: url("./images/Cursor.png"), auto; } 
+
+::-moz-selection { background: #ffaa9f; } 
+
+::selection { background: #ffaa9f; } 
+::-moz-selection { background: #ffaa9f; } 
+header,
+section { -webkit-box-sizing: border-box; box-sizing: border-box; height: 88vh; padding: 8vh; } 
+
+header { min-height: 600px; } 
+
+section { min-height: 800px; } 
+section:last-of-type { height: 78vh; } 
+
+a:hover { cursor: url("./images/Cursor.png"), auto; } 
+
+.paragraph { max-width: 800px; } 
+
+/*** 2.0 Navigation footer ****/
+
+footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 30px; text-align: center; background-color: rgb(197, 231, 220); cursor: url("./images/Cursor.png"), auto; } 
+
+/********* 3.0 Fonts **********/
+
+h1,
+h2,
+h3 { font-family: "Shrikhand", cursive; font-weight: 500; } 
+
+h1 { font-size: 5rem; line-height: 5.5rem; margin-bottom: 1%; } 
+h2,
+h3 { font-size: 4rem; line-height: 4.5rem; margin-bottom: 3%; } 
+
+p,
+a,
+span,
+button { font-size: 1.5rem; font-weight: 400; font-family: "Roboto", sans-serif; line-height: 130%; } 
+
+.toprow p { font-size: 2rem; font-family: "Shrikhand", cursive; text-align: center; } 
+
+/******* 4.0 Animation ********/
+
+header h2 { -webkit-animation-name: header2; animation-name: header2; -webkit-animation-duration: 1.8s; animation-duration: 1.8s; } 
+
+@-webkit-keyframes header2 { 
+ 0% { margin-left: -100px; opacity: 0; } 
+ 60% { margin-left: -100px; opacity: 0; } 
+ 100% { margin-left: 0px; opacity: 1; } 
+ } 
+
+@keyframes header2 { 
+ 0% { margin-left: -100px; opacity: 0; } 
+ 60% { margin-left: -100px; opacity: 0; } 
+ 100% { margin-left: 0px; opacity: 1; } 
+ }
+
+header .paragraph { -webkit-animation-name: headerP; animation-name: headerP; -webkit-animation-duration: 2.6s; animation-duration: 2.6s; } 
+
+@-webkit-keyframes headerP { 
+ 0% { margin-left: -100px; opacity: 0; } 
+ 70% { margin-left: -100px; opacity: 0; } 
+ 100% { margin-left: 0px; opacity: 1; } 
+ } 
+
+@keyframes headerP { 
+ 0% { margin-left: -100px; opacity: 0; } 
+ 70% { margin-left: -100px; opacity: 0; } 
+ 100% { margin-left: 0px; opacity: 1; } 
+ }
+
+/******** 5.0 Images **********/
+
+img { max-width: 100%; } 
+button { -webkit-box-sizing: border-box; box-sizing: border-box; cursor: url("./images/Cursor.png"), auto; } 
+button img { width: 25px; margin-left: 10px; margin-bottom: -4px; } 
+
+.duckdance { display: block; margin:-100px 0px -20px 0px; } 
+
+.duckdance img { opacity: 0.8; } 
+
+/****** 6.0 Scroll bar ********/
+
+body::-webkit-scrollbar { width: 1.2em; } 
+
+body::-webkit-scrollbar-thumb { background-color: #e2c0bc; } 
+
+::-webkit-scrollbar-thumb:hover { background: #cca39e; } 
+
+/***** 7..0 Link animation *****/
+
+.button { background-color: rgb(248, 246, 242); color: rgb(48, 38, 38); padding: 30px 0; margin: 20px 20px 0px 0px; text-align: center; text-decoration: none; display: inline-block; border: 2px solid rgb(48, 38, 38); -webkit-box-shadow: 10px 10px; box-shadow: 10px 10px; width: 250px; } 
+
+.button:hover { -webkit-transform: translatex(-3px) translatey(-3px); -ms-transform: translatex(-3px) translatey(-3px); transform: translatex(-3px) translatey(-3px); -webkit-box-shadow: 13px 13px; box-shadow: 13px 13px; } 
+
+.portfoliobuttons { display: block; margin-bottom: 30px; } 
+
+.portfoliobuttons a { display: inline-block; color: rgb(48, 38, 38); border: 2px solid rgb(48, 38, 38); -webkit-box-shadow: 10px 10px; box-shadow: 10px 10px; width: 300px; text-align: center; padding: 40px 0; } 
+
+.portfoliobuttons a:hover { -webkit-transform: translatex(-3px) translatey(-3px); -ms-transform: translatex(-3px) translatey(-3px); transform: translatex(-3px) translatey(-3px); -webkit-box-shadow: 13px 13px; box-shadow: 13px 13px; } 
+
+#launchtext,
+#lestertext,
+#mintytext,
+#graphictext { visibility: hidden; opacity: 0; margin-left: 50px; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+
+.launchbtn:hover ~ #launchtext { visibility: visible; opacity: 1; margin-left: 70px; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+.lesterbtn:hover ~ #lestertext { visibility: visible; opacity: 1; margin-left: 70px; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+.mintybtn:hover ~ #mintytext { visibility: visible; opacity: 1; margin-left: 70px; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+.graphicbtn:hover ~ #graphictext { visibility: visible; opacity: 1; margin-left: 70px; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+
+#hoverimg1,
+#hoverimg2,
+#hoverimg3,
+#hoverimg4,
+#hoverimg5 { -webkit-box-sizing: border-box; box-sizing: border-box; visibility: hidden; opacity: 0; -webkit-transition: linear; -o-transition: linear; transition: linear; position: fixed; float: right; margin: 30vh 6vw; right: 0; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s;} 
+
+#hovertext { text-decoration: underline rgb(170, 119, 89)} 
+#hovertext:hover ~ #hoverimg1 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+#hovertext:hover ~ #hoverimg2 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+#hovertext:hover ~ #hoverimg3 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+#hovertext:hover ~ #hoverimg4 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+
+#hovertext:hover ~ #hoverimg5 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
+
+/***** 8.0 Responsive *******/
+
+@media only screen and (max-width: 1800px) { h1 { font-size: 4rem; line-height: 5rem; } 
+ h2,
+ h3 { font-size: 3rem; } 
+ p,
+ a,
+ span,
+ button { font-size: 1.3rem; } 
+ .toprow p { font-size: 1.8rem; } 
+ #hoverimg1,
+ #hoverimg2,
+ #hoverimg3,
+ #hoverimg4,
+ #hoverimg5 { margin: 30vh 0vw; } 
+ .portfoliobuttons a { width: 300px; text-align: center; padding: 35px 0; } 
+ }
+
+@media only screen and (max-width: 1375px) { h1 { font-size: 3rem; line-height: 5rem; } 
+ h2,
+ h3 { font-size: 2.2rem; } 
+ p,
+ a,
+ span,
+ button { font-size: 1.3rem; } 
+ .toprow p { font-size: 1.8rem; } 
+ #hoverimg1,
+ #hoverimg2,
+ #hoverimg3,
+ #hoverimg4,
+ #hoverimg5 { margin: 30vh -2vw; } 
+
+ #hovertext:hover ~ #hoverimg1 { -webkit-transform: translatex(-1vw); -ms-transform: translatex(-1vw); transform: translatex(-1vw); } 
+ #hovertext:hover ~ #hoverimg2 { -webkit-transform: translatex(-1vw); -ms-transform: translatex(-1vw); transform: translatex(-1vw); } 
+ #hovertext:hover ~ #hoverimg3 { -webkit-transform: translatex(-1vw); -ms-transform: translatex(-1vw); transform: translatex(-1vw); } 
+ #hovertext:hover ~ #hoverimg4 { -webkit-transform: translatex(-1vw); -ms-transform: translatex(-1vw); transform: translatex(-1vw); } 
+ #hovertext:hover ~ #hoverimg5 { -webkit-transform: translatex(-1vw); -ms-transform: translatex(-1vw); transform: translatex(-1vw); } 
+ .portfoliobuttons a { width: 300px; text-align: center; padding: 30px 0; } 
+ img { max-width: 70%; } 
+ header,
+ section { padding: 4vh; } 
+ }
+
+@media only screen and (max-width: 1100px) { header { padding-top: 8vh; } 
+
+ header,
+ section { height: 70vh; } 
+ section:last-of-type { height: 78vh; } 
+ #hoverimg1,
+ #hoverimg2,
+ #hoverimg3,
+ #hoverimg4,
+ #hoverimg5 { margin: 50vh -2vw; } 
+
+ .toprow p { font-size: 1.5rem; } 
+ }
+
+@media only screen and (max-width: 900px) { header { padding-top: 4vh; } 
+ h1 { font-size: 2.4rem; line-height: 4rem; } 
+ h2,
+ h3 { font-size: 1.8rem; } 
+ p,
+ a,
+ span,
+ button { font-size: 1.3rem; } 
+
+ #hoverimg1,
+ #hoverimg2,
+ #hoverimg3,
+ #hoverimg4,
+ #hoverimg5 { margin: 50vh -2vw; } 
+ .portfoliobuttons { margin-bottom: 15px; } 
+ .connectbuttons,
+ .button { display: block; margin-bottom: 35px; } 
+ }
+
+@media only screen and (max-width: 700px) { header { padding-top: 8vh; } 
+ h1 { font-size: 3rem; line-height: 2.8rem; } 
+ h2,
+ h3 { font-size: 2rem; line-height: 2.5rem; margin-bottom: 2rem; } 
+ .toprow p { font-size: 1.5rem; } 
+ 
+
+.button { margin: 30px 30px 0px 0px; width: 80%; } 
+
+.portfoliobuttons { margin-bottom:30px; } 
+.portfoliobuttons span { display: none; } 
+.portfoliobuttons a { width: 80%; } 
+
+#hovertext { text-decoration: none; } 
+
+#hoverimg1,
+#hoverimg2,
+#hoverimg3,
+#hoverimg4,
+#hoverimg5 { display: none; } 
+
+header,
+section { padding: 4vh 5vw; } 
+
+.duckdance { margin:-100px 0px -18px 0px; } 
+.duckdance img { width: 100px; } 
+}
+
+@media only screen and (max-width: 475px) { header { padding-top: 8vh; } 
+ h1 { font-size: 2rem; line-height: 2.2rem; } 
+ h2,
+ h3 { font-size: 1.5rem; line-height: 2rem; margin-bottom: 1.5rem; } 
+ .toprow p { font-size: 1.3rem; } 
+
+ p,
+ a,
+ span,
+ button { font-size: 1.1rem; } 
+ }
