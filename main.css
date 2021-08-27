@@ -88,18 +88,18 @@ header h2 { -webkit-animation-name: header2; animation-name: header2; -webkit-an
  100% { margin-left: 0px; opacity: 1; } 
  }
 
-header .paragraph { -webkit-animation-name: headerP; animation-name: headerP; -webkit-animation-duration: 2.6s; animation-duration: 2.6s; } 
+header .paragraph { -webkit-animation-name: headerP; animation-name: headerP; -webkit-animation-duration: 3s; animation-duration: 3s; } 
 
 @-webkit-keyframes headerP { 
- 0% { margin-left: -100px; opacity: 0; } 
- 70% { margin-left: -100px; opacity: 0; } 
- 100% { margin-left: 0px; opacity: 1; } 
+0% { margin-top: 100px; opacity: 0; } 
+60% { margin-top: 100px; opacity: 0; } 
+100% { margin-bottom: 0px; opacity: 1; } 
  } 
 
 @keyframes headerP { 
- 0% { margin-left: -100px; opacity: 0; } 
- 70% { margin-left: -100px; opacity: 0; } 
- 100% { margin-left: 0px; opacity: 1; } 
+ 0% { margin-top: 100px; opacity: 0; } 
+ 60% { margin-top: 100px; opacity: 0; } 
+ 100% { margin-bottom: 0px; opacity: 1; } 
  }
 
 /******** 5.0 Images **********/
@@ -108,7 +108,7 @@ img { max-width: 100%; }
 button { -webkit-box-sizing: border-box; box-sizing: border-box; cursor: url("./images/Cursor.png"), auto; } 
 button img { width: 25px; margin-left: 10px; margin-bottom: -4px; } 
 
-.duckdance { display: block; margin:-100px 0px -20px 0px; } 
+.duckdance { display: block; margin:-100px 0px -6px 0px; } 
 
 .duckdance img { opacity: 0.8; } 
 
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb { background-color: #e2c0bc; }
 #hoverimg2,
 #hoverimg3,
 #hoverimg4,
-#hoverimg5 { -webkit-box-sizing: border-box; box-sizing: border-box; visibility: hidden; opacity: 0; -webkit-transition: linear; -o-transition: linear; transition: linear; position: fixed; float: right; margin: 30vh 6vw; right: 0; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s;} 
+#hoverimg5 { visibility: hidden; opacity: 0; -webkit-transition: linear; -o-transition: linear; transition: linear; position: fixed; float: right; margin: 30vh 6vw; right: 0; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s;} 
 
 #hovertext { text-decoration: underline rgb(170, 119, 89)} 
 #hovertext:hover ~ #hoverimg1 { visibility: visible; opacity: 1; -webkit-transform: translatex(-5vw); -ms-transform: translatex(-5vw); transform: translatex(-5vw); -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; } 
@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb { background-color: #e2c0bc; }
 header,
 section { padding: 4vh 5vw; } 
 
-.duckdance { margin:-100px 0px -18px 0px; } 
+.duckdance { margin:-100px 0px -5px 0px; } 
 .duckdance img { width: 100px; } 
 }
 
