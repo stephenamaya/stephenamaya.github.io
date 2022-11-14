@@ -126,9 +126,9 @@ body::-webkit-scrollbar-thumb { background-color: #e2c0bc; }
 
 .button:hover { -webkit-transform: translatex(-3px) translatey(-3px); -ms-transform: translatex(-3px) translatey(-3px); transform: translatex(-3px) translatey(-3px); -webkit-box-shadow: 13px 13px; box-shadow: 13px 13px; } 
 
-.portfoliobuttons { display: block; margin-bottom: 30px; } 
+.portfoliobuttons { display: block; margin-bottom: 25px; } 
 
-.portfoliobuttons a { display: inline-block; color: rgb(48, 38, 38); border: 2px solid rgb(48, 38, 38); -webkit-box-shadow: 10px 10px; box-shadow: 10px 10px; width: 300px; text-align: center; padding: 40px 0; } 
+.portfoliobuttons a { display: inline-block; color: rgb(48, 38, 38); border: 2px solid rgb(48, 38, 38); -webkit-box-shadow: 10px 10px; box-shadow: 10px 10px; width: 300px; text-align: center; padding: 30px 0; } 
 
 .portfoliobuttons a:hover { -webkit-transform: translatex(-3px) translatey(-3px); -ms-transform: translatex(-3px) translatey(-3px); transform: translatex(-3px) translatey(-3px); -webkit-box-shadow: 13px 13px; box-shadow: 13px 13px; } 
 
@@ -174,7 +174,8 @@ body::-webkit-scrollbar-thumb { background-color: #e2c0bc; }
  .portfoliobuttons a { width: 300px; text-align: center; padding: 35px 0; } 
  }
 
-@media only screen and (max-width: 1375px) { h1 { font-size: 3rem; line-height: 5rem; } 
+@media only screen and (max-width: 1375px) { 
+ h1 { font-size: 3rem; line-height: 5rem; } 
  h2,
  h3 { font-size: 2.2rem; } 
  p,
@@ -211,6 +212,11 @@ body::-webkit-scrollbar-thumb { background-color: #e2c0bc; }
  #hoverimg5 { margin: 50vh -2vw; } 
 
  .toprow p { font-size: 1.5rem; } 
+
+ #launchtext,
+#lestertext,
+#mintytext,
+#graphictext { font-size: 14px; } 
  }
 
 @media only screen and (max-width: 900px) { header { padding-top: 4vh; } 
