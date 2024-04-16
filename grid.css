@@ -9,30 +9,7 @@ TABLE OF CONTENTS
 /****** 1.0 Containers *******/
 
 .container {
-    max-width: 1200px;
     margin-top: 5vh;
-}
-
-.container h3 {
-    text-align: center;
-}
-
-.width-container {
-    max-width: 2000px;
-    margin: auto;
-    
-    animation-name: example3;
-    animation-duration: 2s;
-}
-
-@keyframes example3 {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
 }
 
 .mobilecontainer {
@@ -59,11 +36,7 @@ TABLE OF CONTENTS
 }
 
 .toprow {
-    border-bottom: 2px solid rgb(66, 27, 12);
-}
-
-.bottomrow p {
-    padding: 5px 15px;
+    border-bottom: 2px solid rgb(163, 163, 163);
 }
 
 /******** 3.0 Columns ********/
@@ -123,50 +96,10 @@ TABLE OF CONTENTS
 .one,
 .two,
 .three {
-    border-right: 2px solid rgb(66, 27, 12);
+    border-right: 2px solid rgb(168, 168, 168);
 }
 
 /****** 4.0 Responsive *******/
-
-@media only screen and (max-width: 1375px) {
-    .container {
-        width: 1000px;
-    }
-
-    .width-container {
-        width: 100%;
-    }
-
-    .responsive-fade-in {
-        animation-name: example4;
-        animation-duration: 4s;
-    }
-
-    @keyframes example4 {
-        0% {
-            opacity: 0
-        }
-
-        70% {
-            opacity: 0
-        }
-
-        100% {
-            opacity: 1
-        }
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .container {
-        width: 100%;
-    }
-
-    .bottomrow p {
-        font-size: 1.1rem;
-        padding: 6px 8px;
-    }
-}
 
 @media only screen and (max-width: 700px) {
     .mobilecontainer {
@@ -181,8 +114,40 @@ TABLE OF CONTENTS
         width: 46%;
     }
 
-    .bottomrow p {
-        font-size: 1.1rem;
-        padding: 2px 2px;
+    .s4 {
+        width: 31.33%;
     }
+
+    .s5 {
+        width: 39.66%;
+    }
+
+    .s6 {
+        width: 48%;
+    }
+
+    .s7 {
+        width: 56.33%;
+    }
+
+    .s8 {
+        width: 64.66%;
+    }
+
+    .s9 {
+        width: 73%;
+    }
+
+    .s10 {
+        width: 81.33%;
+    }
+
+    .s11 {
+        width: 89.66%;
+    }
+
+    .s12 {
+        width: 98%;
+    }
+
 }

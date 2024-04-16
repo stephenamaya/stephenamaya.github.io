@@ -1,13 +1,11 @@
 /**************************
 TABLE OF CONTENTS
 1.0 Global / Formatting
-2.0 Navigation Footer
+2.0 Navigation
 3.0 Fonts
-4.0 Animation
-5.0 Images
-6.0 Scroll Bar
-7.0 Link Animation
-8.0 Responsive
+4.0 Flair
+5.0 Links
+6.0 Responsive
 ***************************/
 
 /**** 1.0 global / Formatting ****/
@@ -20,13 +18,10 @@ h1,
 h2,
 h3,
 p,
-a,
 em,
 img,
 strong,
 ol,
-ul,
-li,
 table,
 caption,
 footer,
@@ -38,64 +33,55 @@ span {
     font-size: 100%;
     scroll-behavior: smooth;
     list-style: none;
-    color: rgb(48, 38, 38);
+    color: rgb(54, 54, 54);
     text-decoration: none;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(248, 246, 242);
+    background-color: #ffffff;
     text-align: left;
     cursor: default;
     overflow-x: hidden;
     cursor: url("./images/Cursor.png"), auto;
 }
 
-::-moz-selection {
-    background: #ffaa9f;
-}
-
-::selection {
-    background: #ffaa9f;
-}
-
-::-moz-selection {
-    background: #ffaa9f;
-}
-
 header,
 section {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    /* height: 88vh; */
-    padding: 8vh;
-}
-
-header {
-    min-height: 600px;
-}
-
-section {
-    min-height: 600px;
+    padding: 8vh 0;
 }
 
 a:hover {
     cursor: url("./images/Cursor.png"), auto;
 }
 
-.paragraph {
-    max-width: 800px;
+.content {
+    margin: auto;
+    max-width: 600px;
 }
 
-/*** 2.0 Navigation footer ****/
+/*** 2.0 Navigation  ****/
 
 footer {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 30px;
+    height: 40px;
     text-align: center;
-    background-color: rgb(197, 231, 220);
+    background-color: rgb(196, 196, 196);
     cursor: url("./images/Cursor.png"), auto;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 101;
+    text-align: left;
+    padding: 5px;
+    color: white;
+    margin: 5px 0 0 10px;
+}
+
+nav a span {
+    margin: -6px;
+    list-style: none;
 }
 
 /********* 3.0 Fonts **********/
@@ -103,127 +89,109 @@ footer {
 h1,
 h2,
 h3 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 500;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-size: 4rem;
-    line-height: 5.5rem;
-    margin-bottom: 1%;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
 }
 
 h2,
 h3 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-    margin-bottom: 3%;
+    font-size: 1.8rem;
+    line-height: 2rem;
 }
 
 p,
 a,
 span,
 button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
-    line-height: 130%;
+    line-height: 1.5rem;
 }
 
 .toprow p {
-    font-size: 2rem;
-    font-family: "Shrikhand", cursive;
+    font-weight: 700;
     text-align: center;
 }
 
-/******* 4.0 Animation ********/
+/******* 4.0 Flair ********/
 
-header h2 {
-    -webkit-animation-name: header2;
-    animation-name: header2;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-@-webkit-keyframes header2 {
-    0% {
-        margin-left: -100px;
-        opacity: 0;
-    }
-
-    60% {
-        margin-left: -100px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-left: 0px;
-        opacity: 1;
-    }
+.dot1 {
+    background-color: #d45e5e;
 }
 
-@keyframes header2 {
-    0% {
-        margin-left: -100px;
-        opacity: 0;
-    }
-
-    60% {
-        margin-left: -100px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-left: 0px;
-        opacity: 1;
-    }
+.dot2 {
+    background-color: #424242;
 }
 
-header .paragraph {
-    -webkit-animation-name: headerP;
-    animation-name: headerP;
-    -webkit-animation-duration: 3.5s;
-    animation-duration: 3.5s;
+.dot3 {
+    background-color: #397fcf;
 }
 
-@-webkit-keyframes headerP {
-    0% {
-        margin-top: 100px;
-        opacity: 0;
-    }
-
-    60% {
-        margin-top: 100px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-bottom: 0px;
-        opacity: 1;
-    }
+.dot4 {
+    background-color: #89bd0f;
 }
-
-@keyframes headerP {
-    0% {
-        margin-top: 100px;
-        opacity: 0;
-    }
-
-    60% {
-        margin-top: 100px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-bottom: 0px;
-        opacity: 1;
-    }
-}
-
-/******** 5.0 Images **********/
 
 img {
     max-width: 600px;
+}
+
+.duckdance {
+    display: block;
+    margin: -100px 0px -6px 0px;
+}
+
+.duckdance img {
+    opacity: 0.8;
+}
+
+.projectdivider {
+    background-color: rgb(180, 180, 180);
+    height: 2px;
+    margin: 20px 0px;
+}
+
+
+.content-spacer {
+    height: 5vh;
+}
+
+/***** 5.0 Links *****/
+
+.button {
+    color: rgb(83, 83, 83);
+    padding: 10px 0;
+    margin: 20px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb(83, 83, 83);
+    -webkit-box-shadow: 10px 10px;
+    box-shadow: 10px 10px;
+    width: 150px;
+}
+
+.button:hover {
+    -webkit-transform: translatex(-3px) translatey(-3px);
+    -ms-transform: translatex(-3px) translatey(-3px);
+    transform: translatex(-3px) translatey(-3px);
+    -webkit-box-shadow: 13px 13px;
+    box-shadow: 13px 13px;
 }
 
 button {
@@ -238,328 +206,44 @@ button img {
     margin-bottom: -4px;
 }
 
-.duckdance {
-    display: block;
-    margin: -100px 0px -6px 0px;
-}
-
-.duckdance img {
-    opacity: 0.8;
-}
-
-/****** 6.0 Scroll bar ********/
-
-body::-webkit-scrollbar {
-    width: 1.2em;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #e2c0bc;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #cca39e;
-}
-
-/***** 7..0 Link animation *****/
-
-.button {
-    background-color: rgb(248, 246, 242);
-    color: rgb(48, 38, 38);
-    padding: 20px 0;
-    margin: 20px 20px 0px 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid rgb(48, 38, 38);
-    -webkit-box-shadow: 10px 10px;
-    box-shadow: 10px 10px;
-    width: 250px;
-}
-
-.button:hover {
-    -webkit-transform: translatex(-3px) translatey(-3px);
-    -ms-transform: translatex(-3px) translatey(-3px);
-    transform: translatex(-3px) translatey(-3px);
-    -webkit-box-shadow: 13px 13px;
-    box-shadow: 13px 13px;
-}
-
 .portfoliobuttons {
     display: block;
-    margin-bottom: 25px;
+    margin: 15px 0;
 }
 
 .portfoliobuttons a {
     display: inline-block;
-    color: rgb(48, 38, 38);
-    border: 2px solid rgb(48, 38, 38);
-    -webkit-box-shadow: 10px 10px;
-    box-shadow: 10px 10px;
-    width: 300px;
+    color: rgb(83, 83, 83);
+    border: 2px solid rgb(83, 83, 83);
+    -webkit-box-shadow: 6px 6px;
+    box-shadow: 6px 6px;
     text-align: center;
-    padding: 20px 0;
+    padding: 5px 20px;
 }
 
 .portfoliobuttons a:hover {
     -webkit-transform: translatex(-3px) translatey(-3px);
     -ms-transform: translatex(-3px) translatey(-3px);
     transform: translatex(-3px) translatey(-3px);
-    -webkit-box-shadow: 13px 13px;
-    box-shadow: 13px 13px;
+    -webkit-box-shadow: 9px 9px;
+    box-shadow: 9px 9px;
 }
 
-#launchtext,
-#lestertext,
-#mintytext,
-#graphictext {
-    visibility: hidden;
-    opacity: 0;
-    margin-left: 50px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
-.launchbtn:hover~#launchtext {
-    visibility: visible;
-    opacity: 1;
-    margin-left: 70px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
-
-.lesterbtn:hover~#lestertext {
-    visibility: visible;
-    opacity: 1;
-    margin-left: 70px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
-
-.mintybtn:hover~#mintytext {
-    visibility: visible;
-    opacity: 1;
-    margin-left: 70px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
-
-.graphicbtn:hover~#graphictext {
-    visibility: visible;
-    opacity: 1;
-    margin-left: 70px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
+/***** 6.0 Responsive *******/
 
 
-/***** 8.0 Responsive *******/
+@media only screen and (max-width: 600px) {
 
-@media only screen and (max-width: 1800px) {
-    h1 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 3rem;
-    }
-
-    p,
-    a,
-    span,
-    button {
-        font-size: 1.3rem;
-    }
-
-    .toprow p {
-        font-size: 1.8rem;
-    }
-
-    .portfoliobuttons a {
-        width: 300px;
-        text-align: center;
-        padding: 20px 0;
-    }
-}
-
-@media only screen and (max-width: 1375px) {
-    h1 {
-        font-size: 3rem;
-        line-height: 5rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 2.2rem;
-    }
-
-    p,
-    a,
-    span,
-    button {
-        font-size: 1.3rem;
-    }
-
-    .toprow p {
-        font-size: 1.8rem;
-    }
-
-    .portfoliobuttons a {
-        width: 300px;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    header,
-    section {
-        padding: 4vh;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    header {
-        padding-top: 8vh;
-    }
-
-    .toprow p {
-        font-size: 1.5rem;
-    }
-
-    #launchtext,
-    #lestertext,
-    #mintytext,
-    #graphictext {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    header {
-        padding-top: 4vh;
-    }
-
-    h1 {
-        font-size: 2.4rem;
-        line-height: 4rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 1.8rem;
-    }
-
-    p,
-    a,
-    span,
-    button {
-        font-size: 1.3rem;
-    }
-
-    .portfoliobuttons {
-        margin-bottom: 15px;
-    }
-
-    .connectbuttons,
-    .button {
-        display: block;
-        margin-bottom: 35px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    header {
-        padding-top: 8vh;
-    }
-
-    h1 {
-        font-size: 3rem;
-        line-height: 2.8rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .toprow p {
-        font-size: 1.5rem;
-    }
-
-
-    .button {
-        margin: 30px 30px 0px 0px;
-        width: 80%;
-    }
-
-    .portfoliobuttons {
-        margin-bottom: 30px;
-    }
-
-    .portfoliobuttons span {
-        display: none;
-    }
-
-    .portfoliobuttons a {
-        width: 80%;
-    }
-
-    #hovertext {
-        text-decoration: none;
-    }
-
-    header,
-    section {
-        padding: 4vh 5vw;
-    }
-
-    .duckdance {
-        margin: -100px 0px -5px 0px;
-    }
-
-    .duckdance img {
-        width: 100px;
-    }
-
-    img {
-        max-width: 85%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    header {
-        padding-top: 8vh;
-    }
-
-    h1 {
-        font-size: 2rem;
-        line-height: 2.2rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .toprow p {
-        font-size: 1.3rem;
-    }
-
-    p,
-    a,
-    span,
-    button {
-        font-size: 1.1rem;
+    .content {
+        margin: auto 15px;
     }
 
 }
