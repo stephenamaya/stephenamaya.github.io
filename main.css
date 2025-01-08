@@ -65,25 +65,25 @@ a:hover {
 .shadow-1{
     -webkit-box-shadow: 10px 10px 0px 0px #d45e5e;
 -moz-box-shadow: 10px 10px 0px 0px #d45e5e;
-box-shadow: 15px 15px 0px 0px #d45e5e;
+box-shadow: 10px 10px 0px 0px #d45e5e;
 }
 
 .shadow-2{
     -webkit-box-shadow: 10px 10px 0px 0px #424242;
 -moz-box-shadow: 10px 10px 0px 0px #424242;
-box-shadow: 15px 15px 0px 0px #424242;
+box-shadow: 10px 10px 0px 0px #424242;
 }
 
 .shadow-3{
     -webkit-box-shadow: 10px 10px 0px 0px #89bd0f;
     -moz-box-shadow: 10px 10px 0px 0px #89bd0f;
-    box-shadow: 15px 15px 0px 0px #89bd0f;
+    box-shadow: 10px 10px 0px 0px #89bd0f;
 }
 
 .shadow-4{
     -webkit-box-shadow: 10px 10px 0px 0px #397fcf;
 -moz-box-shadow: 10px 10px 0px 0px #397fcf;
-box-shadow: 15px 15px 0px 0px #397fcf;
+box-shadow: 10px 10px 0px 0px #397fcf;
 }
 
 /*** 2.0 Navigation  ****/
@@ -273,8 +273,38 @@ button img {
 
 @media only screen and (max-width: 600px) {
 
-    .content {
-        margin: auto 15px;
+    h1, h2, h3{
+        font-size: 2rem;
     }
 
-}
+    .content{
+        margin: 2em 1em;
+        padding: 2em 1em 3em 1em;
+  
+        /* background-color: rgb(245, 245, 245); */
+        border-radius: 10px;
+    }
+/* 
+    .shadow-1{
+        -webkit-box-shadow: 0px 10px 0px 0px #d45e5e;
+    -moz-box-shadow: 00px 10px 0px 0px #d45e5e;
+    box-shadow: 0px 10px 0px 0px #d45e5e;
+    }
+    
+    .shadow-2{
+        -webkit-box-shadow: 0px 10px 0px 0px #424242;
+    -moz-box-shadow: 0px 10px 0px 0px #424242;
+    box-shadow: 0px 10px 0px 0px #424242;
+    }
+    
+    .shadow-3{
+        -webkit-box-shadow: 0px 10px 0px 0px #89bd0f;
+        -moz-box-shadow: 0px 10px 0px 0px #89bd0f;
+        box-shadow: 0px 10px 0px 0px #89bd0f;
+    }
+    
+    .shadow-4{
+        -webkit-box-shadow: 0px 10px 0px 0px #397fcf;
+    -moz-box-shadow: 0px 10px 0px 0px #397fcf;
+    box-shadow: 0px 10px 0px 0px #397fcf; */
+    }
