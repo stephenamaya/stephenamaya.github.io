@@ -9,7 +9,7 @@ TABLE OF CONTENTS
 /****** 1.0 Containers *******/
 
 .container {
-    margin-top: 5vh;
+    margin-top: 3.5vh;
 }
 
 .mobilecontainer {
@@ -20,7 +20,7 @@ TABLE OF CONTENTS
 
 .row {
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 
 .row [class^="col"] {
@@ -106,9 +106,9 @@ TABLE OF CONTENTS
         display: block;
     }
 
-    .container {
+    /* .container {
         display: none;
-    }
+    } */
 
     .c3 {
         width: 46%;
