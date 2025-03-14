@@ -60,7 +60,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("./images/hero-banner-med.png");
+    url("./images/Hero-sml.png");
   height: 75vh;
   margin: auto;
   background-position: center;
@@ -370,7 +370,7 @@ iframe.instagram-media {
 @media only screen and (min-width: 2200px) {
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-      url("./images/hero-banner-lg.png");
+      url("./images/Hero-lrg.png");
   }
 }
 
