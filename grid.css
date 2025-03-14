@@ -8,146 +8,141 @@ TABLE OF CONTENTS
 
 /****** 1.0 Containers *******/
 
-.container {
-    margin-top: 3.5vh;
-}
+/* .container {
+  margin-top: 3.5vh;
+} */
 
 .mobilecontainer {
-    display: none;
+  display: none;
 }
 
 /********* 2.0 Rows **********/
 
 .row {
-    position: relative;
-    max-width: 100%;
+  position: relative;
+  max-width: 100%;
 }
 
 .row [class^="col"] {
-    float: left;
-    min-height: 0.125rem;
-    box-sizing: border-box;
+  float: left;
+  min-height: 0.125rem;
+  box-sizing: border-box;
 }
 
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .toprow {
-    border-bottom: 2px solid rgb(163, 163, 163);
+  border-bottom: 2px solid rgb(163, 163, 163);
 }
 
 /******** 3.0 Columns ********/
 
 .col {
-    padding: 10px;
+  padding: 8px;
 }
 
 .c1 {
-    width: 6.33%;
+  width: 6.33%;
 }
 
 .c2 {
-    width: 14.66%;
+  width: 14.66%;
 }
 
 .c3 {
-    width: 23%;
+  width: 25%;
 }
 
 .c4 {
-    width: 31.33%;
+  width: 33%;
 }
 
 .c5 {
-    width: 39.66%;
+  width: 39.66%;
 }
 
 .c6 {
-    width: 48%;
+  width: 50%;
 }
 
 .c7 {
-    width: 56.33%;
+  width: 56.33%;
 }
 
 .c8 {
-    width: 64.66%;
+  width: 64.66%;
 }
 
 .c9 {
-    width: 73%;
+  width: 73%;
 }
 
 .c10 {
-    width: 81.33%;
+  width: 81.33%;
 }
 
 .c11 {
-    width: 89.66%;
+  width: 89.66%;
 }
 
 .c12 {
-    width: 98%;
+  width: 100%;
 }
 
 .one,
 .two,
 .three {
-    border-right: 2px solid rgb(168, 168, 168);
+  border-right: 2px solid rgb(168, 168, 168);
 }
 
 /****** 4.0 Responsive *******/
 
 @media only screen and (max-width: 700px) {
-    .mobilecontainer {
-        display: block;
-    }
+  .col {
+    padding: 4px;
+  }
 
-    /* .container {
-        display: none;
-    } */
+  .c3 {
+    width: 46%;
+  }
 
-    .c3 {
-        width: 46%;
-    }
+  .s4 {
+    width: 33.33%;
+  }
 
-    .s4 {
-        width: 31.33%;
-    }
+  .s5 {
+    width: 39.66%;
+  }
 
-    .s5 {
-        width: 39.66%;
-    }
+  .s6 {
+    width: 50%;
+  }
 
-    .s6 {
-        width: 48%;
-    }
+  .s7 {
+    width: 56.33%;
+  }
 
-    .s7 {
-        width: 56.33%;
-    }
+  .s8 {
+    width: 64.66%;
+  }
 
-    .s8 {
-        width: 64.66%;
-    }
+  .s9 {
+    width: 73%;
+  }
 
-    .s9 {
-        width: 73%;
-    }
+  .s10 {
+    width: 81.33%;
+  }
 
-    .s10 {
-        width: 81.33%;
-    }
+  .s11 {
+    width: 89.66%;
+  }
 
-    .s11 {
-        width: 89.66%;
-    }
-
-    .s12 {
-        width: 98%;
-    }
-
+  .s12 {
+    width: 100%;
+  }
 }
